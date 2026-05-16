@@ -1,0 +1,218 @@
+{
+    "save_version": 1,
+    "map": {
+        "hexes": [
+            {
+                "q": 0,
+                "r": 0,
+                "terrain": "plains"
+            },
+            {
+                "q": 1,
+                "r": 0,
+                "terrain": "plains"
+            },
+            {
+                "q": 1,
+                "r": -1,
+                "terrain": "forest"
+            },
+            {
+                "q": 0,
+                "r": -1,
+                "terrain": "mountain"
+            },
+            {
+                "q": -1,
+                "r": 0,
+                "terrain": "mountain"
+            },
+            {
+                "q": -1,
+                "r": 1,
+                "terrain": "plains"
+            },
+            {
+                "q": 0,
+                "r": 1,
+                "terrain": "sea"
+            },
+            {
+                "q": 2,
+                "r": 0,
+                "terrain": "plains"
+            },
+            {
+                "q": 2,
+                "r": -1,
+                "terrain": "forest"
+            },
+            {
+                "q": 1,
+                "r": 1,
+                "terrain": "plains"
+            },
+            {
+                "q": 2,
+                "r": -2,
+                "terrain": "forest"
+            },
+            {
+                "q": 1,
+                "r": -2,
+                "terrain": "plains"
+            },
+            {
+                "q": 0,
+                "r": -2,
+                "terrain": "forest"
+            },
+            {
+                "q": -1,
+                "r": -1,
+                "terrain": "forest"
+            },
+            {
+                "q": -2,
+                "r": 0,
+                "terrain": "forest"
+            },
+            {
+                "q": -2,
+                "r": 1,
+                "terrain": "mountain"
+            },
+            {
+                "q": -2,
+                "r": 2,
+                "terrain": "forest"
+            },
+            {
+                "q": -1,
+                "r": 2,
+                "terrain": "plains"
+            },
+            {
+                "q": 0,
+                "r": 2,
+                "terrain": "plains"
+            },
+            {
+                "q": 3,
+                "r": 0,
+                "terrain": "plains"
+            },
+            {
+                "q": 3,
+                "r": -1,
+                "terrain": "plains"
+            },
+            {
+                "q": 2,
+                "r": 1,
+                "terrain": "forest"
+            },
+            {
+                "q": 3,
+                "r": -2,
+                "terrain": "forest"
+            },
+            {
+                "q": 1,
+                "r": 2,
+                "terrain": "plains"
+            },
+            {
+                "q": 3,
+                "r": -3,
+                "terrain": "forest"
+            },
+            {
+                "q": 2,
+                "r": -3,
+                "terrain": "plains"
+            },
+            {
+                "q": 1,
+                "r": -3,
+                "terrain": "plains"
+            },
+            {
+                "q": 0,
+                "r": -3,
+                "terrain": "plains"
+            },
+            {
+                "q": -1,
+                "r": -2,
+                "terrain": "plains"
+            },
+            {
+                "q": -2,
+                "r": -1,
+                "terrain": "plains"
+            },
+            {
+                "q": -3,
+                "r": 0,
+                "terrain": "plains"
+            },
+            {
+                "q": -3,
+                "r": 1,
+                "terrain": "mountain"
+            },
+            {
+                "q": -3,
+                "r": 2,
+                "terrain": "forest"
+            },
+            {
+                "q": -3,
+                "r": 3,
+                "terrain": "plains"
+            },
+            {
+                "q": -2,
+                "r": 3,
+                "terrain": "forest"
+            },
+            {
+                "q": -1,
+                "r": 3,
+                "terrain": "sea"
+            },
+            {
+                "q": 0,
+                "r": 3,
+                "terrain": "sea"
+            }
+        ],
+        "road_network": {
+            "roads": [
+                {
+                    "a": [
+                        0,
+                        0
+                    ],
+                    "b": [
+                        1,
+                        0
+                    ]
+                }
+            ]
+        }
+    },
+    "actors": [
+        {
+            "actor_id": "player",
+            "actor_name": "Player",
+            "current_hex": [
+                0,
+                0
+            ]
+        }
+    ],
+    "clock": 7,
+    "active_actions": []
+}

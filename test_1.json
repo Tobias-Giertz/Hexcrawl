@@ -1,0 +1,56 @@
+{
+    "save_version": 1,
+    "map": {
+        "hexes": [
+            {
+                "q": 0,
+                "r": 0,
+                "terrain": "sea"
+            },
+            {
+                "q": 1,
+                "r": 0,
+                "terrain": "sea"
+            },
+            {
+                "q": 1,
+                "r": -1,
+                "terrain": "sea"
+            },
+            {
+                "q": 0,
+                "r": -1,
+                "terrain": "sea"
+            },
+            {
+                "q": -1,
+                "r": 0,
+                "terrain": "sea"
+            },
+            {
+                "q": -1,
+                "r": 1,
+                "terrain": "sea"
+            },
+            {
+                "q": 0,
+                "r": 1,
+                "terrain": "sea"
+            }
+        ],
+        "road_network": {
+            "roads": []
+        }
+    },
+    "actors": [
+        {
+            "name": "Player",
+            "current_hex": [
+                0,
+                0
+            ]
+        }
+    ],
+    "clock": 0,
+    "active_actions": []
+}
