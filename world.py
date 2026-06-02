@@ -6,6 +6,7 @@ from map import Map
 from actor import Actor
 from coordinates import axial_to_pixel
 from terrain import Terrain
+from edges import SegmentType
 
 class World:
     def __init__(self):
@@ -189,13 +190,19 @@ class World:
                 color="black"
             )
 
-        for road in self.map.road_network.roads:
-            a, b = tuple(road)
+        segment_colors = {
+            SegmentType.ROAD: "black",
+            SegmentType.RIVER: "blue",
+        }
+
+        for segment in self.map.segment_network.segments:
+            hexes, s_type = tuple(segment)
+            a, b = tuple(hexes)
 
             a_x, a_y = axial_to_pixel(a.q, a.r)
             b_x, b_y = axial_to_pixel(b.q, b.r)
 
-            plt.plot([a_x, b_x], [a_y, b_y], color="black")
+            plt.plot([a_x, b_x], [a_y, b_y], color=segment_colors.get(s_type))
 
         actor_xs = []
         actor_ys = []

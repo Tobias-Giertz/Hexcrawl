@@ -1,8 +1,9 @@
 import time
+import tkinter as tk
 
 from world import World
 from actor import Actor
-from roads import *
+from edges import *
 from actions import ACTIONS
 
 
@@ -32,7 +33,10 @@ if new_or_load == "new":
     world.player = player
 
     # Debug road, remove later
-    world.map.road_network.add_road(world.map.get_hex(0, 0), world.map.get_hex(1, 0))
+    world.map.segment_network.add_segment(world.map.get_hex(0, 0), world.map.get_hex(1, 0), SegmentType.ROAD)
+    world.map.segment_network.add_segment(world.map.get_hex(1, 0), world.map.get_hex(1, 1), SegmentType.ROAD)
+    world.map.segment_network.add_segment(world.map.get_hex(0, 1), world.map.get_hex(0, 2), SegmentType.RIVER)
+    world.map.segment_network.add_segment(world.map.get_hex(0, 2), world.map.get_hex(0, 3), SegmentType.RIVER)
 
 elif new_or_load == "load":
     world_name = input("Load world name: ")

@@ -188,17 +188,51 @@
                 "terrain": "sea"
             }
         ],
-        "road_network": {
-            "roads": [
+        "segment_network": {
+            "segments": [
                 {
                     "a": [
+                        1,
+                        0
+                    ],
+                    "b": [
                         0,
                         0
+                    ],
+                    "type": "road"
+                },
+                {
+                    "a": [
+                        1,
+                        1
                     ],
                     "b": [
                         1,
                         0
-                    ]
+                    ],
+                    "type": "road"
+                },
+                {
+                    "a": [
+                        0,
+                        2
+                    ],
+                    "b": [
+                        0,
+                        1
+                    ],
+                    "type": "river"
+                },
+                {
+                    "a": [
+                        0,
+                        2
+                    ],
+                    "b": [
+                        0,
+                        3
+                    ],
+                    "type": "river"
                 }
             ]
         }
@@ -213,6 +247,6 @@
             ]
         }
     ],
-    "clock": 7,
+    "clock": 17,
     "active_actions": []
 }

@@ -1,5 +1,6 @@
 from coordinates import DIRECTIONS, is_adjacent
 from terrain import TERRAIN_DATA
+from edges import SegmentType
 
 ACTIONS = {
     "player moves east": lambda world: move_player(world, "east"),
@@ -93,9 +94,10 @@ class MoveAction(Action):
     def on_start(self, world):
         actor = world.actors[self.actor_id]
 
-        if world.map.road_network.get_road(actor.current_hex, world.map.get_hex(self.target_q, self.target_r)):
+        # Road
+        if world.map.segment_network.get_segment(actor.current_hex, world.map.get_hex(self.target_q, self.target_r), SegmentType.ROAD):
             self.remaining_time = 1
-            # print("Road found! Movement speed increased.")
+            print("Road found!")
         else:
             self.remaining_time = TERRAIN_DATA[world.map.get_hex(self.target_q, self.target_r).terrain]["speed"]
         # print(f"Target terrain: {world.map.get_hex(self.target_q, self.target_r).terrain}, speed: {self.remaining_time}")
