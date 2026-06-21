@@ -260,7 +260,7 @@
             {
                 "q": -1,
                 "r": -2,
-                "terrain": "plains"
+                "terrain": "archipelago"
             },
             {
                 "q": 0,
@@ -340,20 +340,326 @@
             {
                 "q": 4,
                 "r": 0,
+                "terrain": "archipelago"
+            },
+            {
+                "q": 5,
+                "r": 3,
                 "terrain": "sea"
+            },
+            {
+                "q": 6,
+                "r": 3,
+                "terrain": "sea"
+            },
+            {
+                "q": 9,
+                "r": 3,
+                "terrain": "archipelago"
+            },
+            {
+                "q": 10,
+                "r": 3,
+                "terrain": "archipelago"
+            },
+            {
+                "q": 11,
+                "r": 3,
+                "terrain": "forest"
+            },
+            {
+                "q": 6,
+                "r": 4,
+                "terrain": "sea"
+            },
+            {
+                "q": 7,
+                "r": 4,
+                "terrain": "plains"
+            },
+            {
+                "q": 8,
+                "r": 4,
+                "terrain": "plains"
+            },
+            {
+                "q": -2,
+                "r": -3,
+                "terrain": "sea"
+            },
+            {
+                "q": -3,
+                "r": -3,
+                "terrain": "sea"
+            },
+            {
+                "q": -4,
+                "r": -2,
+                "terrain": "plains"
+            },
+            {
+                "q": -5,
+                "r": -1,
+                "terrain": "plains"
+            },
+            {
+                "q": -6,
+                "r": 0,
+                "terrain": "plains"
+            },
+            {
+                "q": -6,
+                "r": 1,
+                "terrain": "archipelago"
+            },
+            {
+                "q": -6,
+                "r": 2,
+                "terrain": "forest"
+            },
+            {
+                "q": 4,
+                "r": 1,
+                "terrain": "plains"
+            },
+            {
+                "q": -6,
+                "r": 3,
+                "terrain": "mountain"
+            },
+            {
+                "q": -5,
+                "r": 3,
+                "terrain": "forest"
+            },
+            {
+                "q": -2,
+                "r": 3,
+                "terrain": "forest"
+            },
+            {
+                "q": -1,
+                "r": 3,
+                "terrain": "sea"
+            },
+            {
+                "q": 5,
+                "r": 2,
+                "terrain": "forest"
+            },
+            {
+                "q": 5,
+                "r": 1,
+                "terrain": "plains"
+            },
+            {
+                "q": -5,
+                "r": 4,
+                "terrain": "plains"
+            },
+            {
+                "q": -4,
+                "r": 4,
+                "terrain": "plains"
+            },
+            {
+                "q": -3,
+                "r": 4,
+                "terrain": "plains"
+            },
+            {
+                "q": -1,
+                "r": 4,
+                "terrain": "plains"
+            },
+            {
+                "q": 4,
+                "r": 4,
+                "terrain": "plains"
+            },
+            {
+                "q": -1,
+                "r": 5,
+                "terrain": "archipelago"
+            },
+            {
+                "q": 0,
+                "r": 5,
+                "terrain": "plains"
+            },
+            {
+                "q": 1,
+                "r": 5,
+                "terrain": "sea"
+            },
+            {
+                "q": 2,
+                "r": 5,
+                "terrain": "plains"
+            },
+            {
+                "q": 3,
+                "r": 5,
+                "terrain": "archipelago"
+            },
+            {
+                "q": 1,
+                "r": -5,
+                "terrain": "forest"
+            },
+            {
+                "q": 0,
+                "r": -5,
+                "terrain": "archipelago"
+            },
+            {
+                "q": -1,
+                "r": -4,
+                "terrain": "forest"
+            },
+            {
+                "q": 2,
+                "r": -5,
+                "terrain": "forest"
+            },
+            {
+                "q": 3,
+                "r": -5,
+                "terrain": "mountain"
+            },
+            {
+                "q": 4,
+                "r": -5,
+                "terrain": "mountain"
+            },
+            {
+                "q": 5,
+                "r": -4,
+                "terrain": "forest"
+            },
+            {
+                "q": 5,
+                "r": -5,
+                "terrain": "forest"
+            },
+            {
+                "q": 5,
+                "r": -3,
+                "terrain": "plains"
+            },
+            {
+                "q": 5,
+                "r": -2,
+                "terrain": "sea"
+            },
+            {
+                "q": 5,
+                "r": -1,
+                "terrain": "sea"
+            },
+            {
+                "q": 5,
+                "r": 0,
+                "terrain": "archipelago"
+            },
+            {
+                "q": 6,
+                "r": 2,
+                "terrain": "plains"
+            },
+            {
+                "q": 5,
+                "r": 4,
+                "terrain": "sea"
+            },
+            {
+                "q": 7,
+                "r": 3,
+                "terrain": "archipelago"
+            },
+            {
+                "q": 7,
+                "r": 2,
+                "terrain": "plains"
+            },
+            {
+                "q": 10,
+                "r": 2,
+                "terrain": "sea"
+            },
+            {
+                "q": 9,
+                "r": 2,
+                "terrain": "plains"
+            },
+            {
+                "q": 8,
+                "r": 3,
+                "terrain": "mountain"
+            },
+            {
+                "q": 9,
+                "r": 4,
+                "terrain": "plains"
+            },
+            {
+                "q": 11,
+                "r": 2,
+                "terrain": "plains"
+            },
+            {
+                "q": 10,
+                "r": 4,
+                "terrain": "mountain"
+            },
+            {
+                "q": 12,
+                "r": 3,
+                "terrain": "plains"
+            },
+            {
+                "q": 12,
+                "r": 2,
+                "terrain": "plains"
+            },
+            {
+                "q": 11,
+                "r": 4,
+                "terrain": "forest"
+            },
+            {
+                "q": 5,
+                "r": 5,
+                "terrain": "archipelago"
+            },
+            {
+                "q": 6,
+                "r": 5,
+                "terrain": "plains"
+            },
+            {
+                "q": 7,
+                "r": 5,
+                "terrain": "plains"
+            },
+            {
+                "q": 8,
+                "r": 5,
+                "terrain": "archipelago"
             }
         ],
-        "road_network": {
-            "roads": [
+        "segment_network": {
+            "segments": [
                 {
                     "a": [
+                        0,
+                        0
+                    ],
+                    "b": [
                         -1,
                         0
                     ],
-                    "b": [
-                        0,
-                        0
-                    ]
+                    "type": "road"
                 },
                 {
                     "a": [
@@ -363,17 +669,19 @@
                     "b": [
                         0,
                         0
-                    ]
+                    ],
+                    "type": "road"
                 },
                 {
                     "a": [
+                        1,
+                        0
+                    ],
+                    "b": [
                         2,
                         0
                     ],
-                    "b": [
-                        1,
-                        0
-                    ]
+                    "type": "road"
                 },
                 {
                     "a": [
@@ -383,27 +691,30 @@
                     "b": [
                         2,
                         0
-                    ]
+                    ],
+                    "type": "road"
                 },
                 {
                     "a": [
+                        -1,
+                        -1
+                    ],
+                    "b": [
                         -1,
                         0
                     ],
-                    "b": [
-                        -1,
-                        -1
-                    ]
+                    "type": "road"
                 },
                 {
                     "a": [
                         -1,
-                        -2
+                        -1
                     ],
                     "b": [
                         -1,
-                        -1
-                    ]
+                        -2
+                    ],
+                    "type": "road"
                 },
                 {
                     "a": [
@@ -413,7 +724,8 @@
                     "b": [
                         0,
                         -2
-                    ]
+                    ],
+                    "type": "road"
                 },
                 {
                     "a": [
@@ -423,7 +735,8 @@
                     "b": [
                         0,
                         -2
-                    ]
+                    ],
+                    "type": "road"
                 },
                 {
                     "a": [
@@ -433,17 +746,19 @@
                     "b": [
                         0,
                         -2
-                    ]
+                    ],
+                    "type": "road"
                 },
                 {
                     "a": [
+                        1,
+                        -2
+                    ],
+                    "b": [
                         2,
                         -2
                     ],
-                    "b": [
-                        1,
-                        -2
-                    ]
+                    "type": "road"
                 },
                 {
                     "a": [
@@ -453,37 +768,41 @@
                     "b": [
                         2,
                         -2
-                    ]
+                    ],
+                    "type": "road"
                 },
                 {
                     "a": [
+                        2,
+                        -1
+                    ],
+                    "b": [
                         3,
                         -2
                     ],
-                    "b": [
-                        2,
-                        -1
-                    ]
+                    "type": "road"
                 },
                 {
                     "a": [
+                        2,
+                        -1
+                    ],
+                    "b": [
                         2,
                         0
                     ],
-                    "b": [
-                        2,
-                        -1
-                    ]
+                    "type": "road"
                 },
                 {
                     "a": [
-                        1,
+                        2,
                         -1
                     ],
                     "b": [
-                        2,
+                        1,
                         -1
-                    ]
+                    ],
+                    "type": "road"
                 },
                 {
                     "a": [
@@ -493,37 +812,206 @@
                     "b": [
                         0,
                         0
-                    ]
+                    ],
+                    "type": "road"
                 },
                 {
                     "a": [
+                        1,
+                        -2
+                    ],
+                    "b": [
                         1,
                         -1
                     ],
-                    "b": [
-                        1,
-                        -2
-                    ]
+                    "type": "road"
                 },
                 {
                     "a": [
-                        1,
-                        -2
-                    ],
-                    "b": [
                         2,
                         -3
-                    ]
+                    ],
+                    "b": [
+                        1,
+                        -2
+                    ],
+                    "type": "road"
                 },
                 {
                     "a": [
+                        2,
+                        -3
+                    ],
+                    "b": [
                         2,
                         -4
                     ],
+                    "type": "road"
+                },
+                {
+                    "a": [
+                        0,
+                        1
+                    ],
+                    "b": [
+                        0,
+                        0
+                    ],
+                    "type": "river"
+                },
+                {
+                    "a": [
+                        0,
+                        1
+                    ],
+                    "b": [
+                        1,
+                        1
+                    ],
+                    "type": "river"
+                },
+                {
+                    "a": [
+                        1,
+                        1
+                    ],
                     "b": [
                         2,
-                        -3
-                    ]
+                        1
+                    ],
+                    "type": "river"
+                },
+                {
+                    "a": [
+                        3,
+                        1
+                    ],
+                    "b": [
+                        2,
+                        1
+                    ],
+                    "type": "river"
+                },
+                {
+                    "a": [
+                        3,
+                        1
+                    ],
+                    "b": [
+                        3,
+                        2
+                    ],
+                    "type": "river"
+                },
+                {
+                    "a": [
+                        4,
+                        2
+                    ],
+                    "b": [
+                        3,
+                        2
+                    ],
+                    "type": "river"
+                },
+                {
+                    "a": [
+                        4,
+                        3
+                    ],
+                    "b": [
+                        4,
+                        2
+                    ],
+                    "type": "river"
+                },
+                {
+                    "a": [
+                        4,
+                        3
+                    ],
+                    "b": [
+                        5,
+                        3
+                    ],
+                    "type": "river"
+                },
+                {
+                    "a": [
+                        6,
+                        3
+                    ],
+                    "b": [
+                        5,
+                        3
+                    ],
+                    "type": "river"
+                },
+                {
+                    "a": [
+                        6,
+                        4
+                    ],
+                    "b": [
+                        6,
+                        3
+                    ],
+                    "type": "river"
+                },
+                {
+                    "a": [
+                        6,
+                        4
+                    ],
+                    "b": [
+                        7,
+                        4
+                    ],
+                    "type": "river"
+                },
+                {
+                    "a": [
+                        7,
+                        4
+                    ],
+                    "b": [
+                        8,
+                        4
+                    ],
+                    "type": "river"
+                },
+                {
+                    "a": [
+                        9,
+                        3
+                    ],
+                    "b": [
+                        8,
+                        4
+                    ],
+                    "type": "river"
+                },
+                {
+                    "a": [
+                        9,
+                        3
+                    ],
+                    "b": [
+                        10,
+                        3
+                    ],
+                    "type": "river"
+                },
+                {
+                    "a": [
+                        10,
+                        3
+                    ],
+                    "b": [
+                        11,
+                        3
+                    ],
+                    "type": "river"
                 }
             ]
         }

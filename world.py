@@ -1,11 +1,12 @@
 import json
+import csv
 import matplotlib.pyplot as plt
 
 from actions import Action
 from map import Map
 from actor import Actor
 from coordinates import axial_to_pixel
-from terrain import Terrain
+from terrain import Terrain, TERRAIN_DATA
 from edges import SegmentType
 
 class World:
@@ -38,7 +39,7 @@ class World:
             for action_data in data["active_actions"]
         ]
         return world
-    
+
     def save(self, filepath):
         with open(filepath, "w", encoding="utf-8") as file:
             json.dump(self.to_dict(), file, indent=4, ensure_ascii=False)
@@ -49,8 +50,10 @@ class World:
             data = json.load(file)
 
         return cls.from_dict(data)
-    
+
     def advance_time(self, amount=1):
+        self.check_random_events()
+
         for actor in self.actors.values():
             action = actor.current_action
 
@@ -123,6 +126,14 @@ class World:
             for q, r in self.map.get_neighbor_coords(actor.current_hex):
                 if self.map.get_hex(q, r) is None:
                     self.map.add_hex(q, r)
+
+    def check_random_events(self): # placeholder
+        print("Checking for random encounters...")
+        for actors in self.actors.values():
+            if actors.current_hex is None:
+                continue
+            # actor.roll_random_event(self)
+        pass
     
 
 ####==============================####
@@ -148,12 +159,7 @@ class World:
         return
         
     def draw_map(self, filename="plot.png"):
-        terrain_colors = {
-            Terrain.PLAINS: "yellow",
-            Terrain.FOREST: "green",
-            Terrain.MOUNTAIN: "gray",
-            Terrain.SEA: "blue",
-        }
+        terrain_colors = {t: data["map_color"] for t, data in TERRAIN_DATA.items()}
 
         xs = []
         ys = []
@@ -192,7 +198,7 @@ class World:
 
         segment_colors = {
             SegmentType.ROAD: "black",
-            SegmentType.RIVER: "blue",
+            SegmentType.RIVER: "lightblue",
         }
 
         for segment in self.map.segment_network.segments:

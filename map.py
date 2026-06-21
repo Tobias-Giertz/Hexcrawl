@@ -4,7 +4,7 @@ from hex import Hex
 from edges import SegmentNetwork
 from noisemap import noise_value
 from coordinates import *
-from terrain import Terrain
+from terrain import Terrain, TERRAIN_DATA
 
 class Map:
     def __init__(self):
@@ -65,28 +65,16 @@ class Map:
             raise ValueError(f"Unknown generation method: {m}")
 
     def _add_hex_from_random(self, q, r):
-        seed = random.randint(1, 10)
-        if seed < 2:
-            terrain = Terrain.SEA
-        elif seed < 5:
-            terrain = Terrain.PLAINS
-        elif seed < 8:
-            terrain = Terrain.FOREST
-        else:
-            terrain = Terrain.MOUNTAIN
+        seed = random.random()
+        for terrain in sorted(Terrain, key=lambda t: TERRAIN_DATA[t]["treshold"]):
+            if seed < TERRAIN_DATA[terrain]["treshold"]:
+                break
         self._add_hex(q, r, terrain)
 
     def _add_hex_from_noise(self, q, r):
         x, y = axial_to_pixel(q, r)
-        noise = noise_value(x, y)
-        # print(f'Noise value for ({q}, {r}): {noise}')  # Debug print
-        # Use noise value to determine terrain (example logic - adjust as needed)
-        if noise < 0.45:
-            terrain = Terrain.SEA
-        elif noise < 0.52:
-            terrain = Terrain.PLAINS
-        elif noise < 0.60:
-            terrain = Terrain.FOREST
-        else:
-            terrain = Terrain.MOUNTAIN
+        seed = noise_value(x, y)
+        for terrain in sorted(Terrain, key=lambda t: TERRAIN_DATA[t]["treshold"]):
+            if seed < TERRAIN_DATA[terrain]["treshold"]:
+                break
         self._add_hex(q, r, terrain)

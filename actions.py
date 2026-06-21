@@ -1,5 +1,5 @@
 from coordinates import DIRECTIONS, is_adjacent
-from terrain import TERRAIN_DATA
+from terrain import Terrain, TERRAIN_DATA
 from edges import SegmentType
 
 ACTIONS = {
@@ -114,9 +114,14 @@ class MoveAction(Action):
     def on_complete(self, world):
         actor = world.actors[self.actor_id]
         actor.current_hex = world.map.get_hex(self.target_q, self.target_r)
+        self.print_on_complete(world)
+
 
     def print_description(self):
         return f"{self.actor_id} moves to ({self.target_q}, {self.target_r}), time remaining: {self.remaining_time}"   
+    
+    def print_on_complete(self, world):
+        return f"{self.actor_id} has arrived at a {Terrain(world.map.get_hex(self.target_q, self.target_r).terrain).name} hex at ({self.target_q}, {self.target_r})"
 
 
 def move_player(world, direction):

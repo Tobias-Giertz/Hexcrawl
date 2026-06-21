@@ -1,5 +1,6 @@
 from world import World
 from terrain import Terrain
+from edges import SegmentType
 
 ### ========================================== ###
 ###   World generation: Vardvägar, Heymdalen   ###
@@ -38,6 +39,15 @@ land_hexes = [
 for r, q in land_hexes:
     world.map.add_hex(r, q)
 
+## Vägen till Tredagaviken
+land_hexes = [
+    (5, 3), (6, 3), (9, 3), (10, 3), (11, 3),
+    (6, 4), (7, 4), (8, 4)
+]
+
+for r, q in land_hexes:
+    world.map.add_hex(r, q)
+
 
 ## Landmärken (ej implemenerat)
 # Städer: Stenröse (0,0)
@@ -69,7 +79,32 @@ segment = [
 ]
 
 for start, end in segment:
-    world.map.road_network.add_road(world.map.get_hex(*start), world.map.get_hex(*end))
+    world.map.segment_network.add_segment(world.map.get_hex(*start), world.map.get_hex(*end), SegmentType.ROAD)
+
+## Sjöleder
+segment = [
+    ((0, 0), (0, 1)),
+    ((0, 1), (1, 1)),
+    ((1, 1), (2, 1)),
+    ((2, 1), (3, 1)),
+    ((3, 1), (3, 2)),
+    ((3, 2), (4, 2)),
+    ((4, 2), (4, 3)),
+    ((4, 3), (5, 3)),
+    ((5, 3), (6, 3)),
+    ((6, 3), (6, 4)),
+    ((6, 4), (7, 4)),
+    ((7, 4), (8, 4)),
+    ((8, 4), (9, 3)),
+    ((9, 3), (10, 3)),
+    ((10, 3), (11, 3))
+]
+
+for start, end in segment:
+    world.map.segment_network.add_segment(world.map.get_hex(*start), world.map.get_hex(*end), SegmentType.RIVER)
+
+for n in range(1):
+    world.expand_map_from_edges()
 
 world.draw_map("Heymdalen.png")
 

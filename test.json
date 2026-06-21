@@ -90,7 +90,7 @@
             {
                 "q": -1,
                 "r": 2,
-                "terrain": "plains"
+                "terrain": "archipelago"
             },
             {
                 "q": 0,
@@ -145,7 +145,7 @@
             {
                 "q": -1,
                 "r": -2,
-                "terrain": "plains"
+                "terrain": "archipelago"
             },
             {
                 "q": -2,
@@ -185,7 +185,7 @@
             {
                 "q": 0,
                 "r": 3,
-                "terrain": "sea"
+                "terrain": "archipelago"
             }
         ],
         "segment_network": {
@@ -204,11 +204,11 @@
                 {
                     "a": [
                         1,
-                        1
+                        0
                     ],
                     "b": [
                         1,
-                        0
+                        1
                     ],
                     "type": "road"
                 },
@@ -247,6 +247,6 @@
             ]
         }
     ],
-    "clock": 17,
+    "clock": 0,
     "active_actions": []
 }
